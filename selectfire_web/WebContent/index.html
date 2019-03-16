@@ -124,15 +124,14 @@
     			alertFunction();
     			return;
     		}
-    		$('#form [name="name"]').val(text);
-    		$('#form [name="platform"]').val(platform);
-    		$('#form').attr('action','search.html');
-    		$('#form').attr('method','POST');
-    		$('#form').submit();
+    		$('#formData [name="name"]').val(text);
+    		$('#formData [name="platform"]').val(platform);
+    		$('#formData').attr('action','search.html');
+    		$('#formData').attr('method','GET');
+    		//$('#form').attr('target','search.html');
+    		$('#formData').submit();
     		
-    		alert();
     	});
-    	
     	
     	
     	$('.btn-group .btn.btn-primary').on('click',function(e){
